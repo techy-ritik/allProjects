@@ -37,7 +37,7 @@ axios
   });
 
 function itemView(productData) {
-  const newLi = document.createElement("li");
+  const newLi = document.createElement("li"); 
   newLi.id = productData._id;
 
   newLi.innerText = `Rs. ${productData.price} - for ${productData.itemName} - `;
