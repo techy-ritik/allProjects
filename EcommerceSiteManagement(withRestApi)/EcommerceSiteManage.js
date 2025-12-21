@@ -13,7 +13,7 @@ form.addEventListener("submit", function (event) {
   const newProduct = {
     price: document.getElementById("price").value,
     itemName: document.getElementById("product").value,
-  };
+  }; 
 
   axios
     .post(api + "/productList", newProduct)

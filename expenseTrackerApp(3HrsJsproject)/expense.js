@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
   const expenseObject = {
     xpAmount: document.getElementById("amount").value,
     xpDesc: document.getElementById("description").value,
-    xpCtgry: document.getElementById("category").value,
+    xpCtgry: document.getElementById("category").value, 
   };
 
   const serializedExpenseObject = JSON.stringify(expenseObject);
