@@ -15,6 +15,7 @@ form.addEventListener("submit", function (event) {
     itemName: document.getElementById("product").value,
   }; 
 
+
   axios
     .post(api + "/productList", newProduct)
     .then((res) => {
@@ -36,6 +37,7 @@ axios
     console.log(err);
   });
 
+
 function itemView(productData) {
   const newLi = document.createElement("li");
   newLi.id = productData._id;
@@ -56,6 +58,7 @@ function itemView(productData) {
 
   console.log(totalValue);
 }
+ 
 
 function dltProduct(event) {
   if (event.target.classList.contains("delete")) {
@@ -74,3 +77,4 @@ function dltProduct(event) {
     totalValue.innerText = `Total Value Worth of Products:- ${totalPrice}`;
   }
 }
+
